@@ -1,8 +1,11 @@
-package com.example.WebStream.repository;
+package com.example.WebStream.repositorys;
 
 import com.example.WebStream.models.Filme;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+
+@Repository
 public interface FilmeRepository extends JpaRepository<Filme, Long> {
 
 }
