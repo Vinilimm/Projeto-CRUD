@@ -31,7 +31,7 @@ public class FilmeController {
         return ResponseEntity.ok(createdfilme);
     }
 
-    @GetMapping("/id_filme")
+    @GetMapping("/{id}")
     public ResponseEntity<Filme> getFilmePorId(@PathVariable("idFilme") Long idFilme){
        var filme = filmeService.getFilmePorId(idFilme);
         return filme.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
