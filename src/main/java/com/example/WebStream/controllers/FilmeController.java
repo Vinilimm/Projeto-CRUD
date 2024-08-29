@@ -21,5 +21,4 @@ public class FilmeController {
     public List<Filme> getAllTopicos() {
         return filmeService.listarfilmes();
     }
-
 }
